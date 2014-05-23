@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+    meta charset="utf-8" 
+    meta content="IE=edge" http-equiv="X-UA-Compatible" 
+    title Горизонтальный с двумя товарами
+    link href="css/main.css" rel="stylesheet" type="text/css" 
+  body
+    .test-container style=("padding:5px;") 
+      .sm_w3.smw-vert
+        .container
+          .row.row-head
+            .col-12.item-title
+              h1.upfontsize
+                | Предложения дня 
+                br
+                  | в городе
+                  a.change-city href="http://" target="_blank" Москва
+
+          .row.row-body
+            .col-4
+              a href="#"
+                img.img-responsive.item-photo.item-three-photo alt="" src="img/htc.png"
+            .col-8.item-three-title
+              h1
+                a Apple iPhone 5 16Gb 
+                br
+                  | от
+                  a 22 400 р
+              .all-prop
+                a
+                  span.txt Все предложения
+                  span.count 25
+            .col-12
+              == Slim::Template.new("tbl-sm2.slim").render
+          .row.row-body
+            .col-4
+              a href="#"
+                img.img-responsive.item-photo.item-three-photo alt="" src="img/htc.png"
+            .col-8.item-three-title
+              h1
+                a Apple iPhone 5 16Gb 
+                br
+                  | от
+                  a 22 400 р
+              .all-prop
+                a
+                  span.txt Все предложения
+                  span.count 25
+            .col-12
+              == Slim::Template.new("tbl-sm2.slim").render
+          .row.row-footer
+            .col-12.power
+              p.text-center
+                | Powered by
+                a SocialMart
+              p.text-center
+                | Данные – 
+                a href="#" Яндекс-маркет

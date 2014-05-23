@@ -290,6 +290,18 @@
 .sm_w3.smw-horizontal-three {
   min-width: 370px;
 }
+.sm_w3.smw-vert {
+  min-width: 240px;
+  max-width: 300px;
+}
+.sm_w3.smw-vert h1 {
+  font-size: 12px;
+}
+.sm_w3.smw-vert h1.upfontsize {
+  font-size: 14px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
 .sm_w3 .prices_rate {
   width: 65px;
   height: 12px;
@@ -453,7 +465,7 @@
 }
 .sm_w3 .compare.three-tbl td.first-call {
   padding-left: 8px;
-  min-width: 65px;
+  min-width: 73px;
 }
 .sm_w3 .compare.three-tbl td.first-call a {
   display: inline;
@@ -481,11 +493,19 @@
 .sm_w3 .compare.three-tbl tr:hover td.first-call .prices_rate {
   display: block;
 }
+.sm_w3 .row-footer {
+  border-top: 1px solid #E7E7E7;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 .sm_w3 .item-photo.item-three-photo {
   padding-top: 15px;
 }
 .sm_w3 .visible-xs {
   display: none !important;
+}
+.sm_w3.smw-vert .item-title {
+  padding-top: 5px;
 }
 @media (max-width: 490px) {
   .sm_w3 .visible-xs {
