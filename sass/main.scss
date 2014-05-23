@@ -1,0 +1,233 @@
+@import "var";
+@import "ico";
+@import "mixins";
+
+.sm_w3 {
+    @import "grid", "type", "btn", "utilities";
+
+    &.smw-horizontal {
+      min-width: 300px;
+    }
+    &.smw-horizontal-three {
+      min-width: 370px;
+    }
+
+    background-color: #fff;
+    border:1px solid #e7e7e7;
+    border-radius: 2px;
+    .prices_rate {
+        width: 65px;
+        height: 12px;
+        .glyphicon {
+            width: 12px;
+            height: 12px;
+            font-size: 13px;
+            color:#bababa;
+        }
+        &.rate0 { .glyphicon { color:#bababa; } }
+        &.rate1 { .glyphicon:nth-child(-n+1){ color:#ff9d0f; } }
+        &.rate2 { .glyphicon:nth-child(-n+2){ color:#ff9d0f; } }
+        &.rate3 { .glyphicon:nth-child(-n+3){ color:#ff9d0f; } }
+        &.rate4 { .glyphicon:nth-child(-n+4){ color:#ff9d0f; } }
+        &.rate5 { .glyphicon:nth-child(-n+5){ color:#ff9d0f; } }
+    }
+    .with-star {
+        width: 100%;
+    }
+    .compare {
+        margin-top: 5px;
+        td {
+          text-align: center;
+          white-space: nowrap;
+          padding-top: 2px;
+          &.first-call {
+            min-width: 128px;
+            text-align: left;
+          }
+          &.last-call {
+            text-align: right;
+          }
+          a {
+              color:$link-color;
+              font-size: 12px;
+              font-family: $ff;
+              text-decoration: underline;
+              cursor: pointer;
+              &:hover {
+                  text-decoration: none;
+              }
+          }
+          .price {
+              font-family: $ff;
+              color: $title-color;
+              font-weight: bold;
+              font-size: 12px;
+          }
+        }
+    }
+
+    .img-responsive {
+      @include img-responsive();
+    }
+    .item-photo {
+      margin-left: auto;
+      margin-right: auto;
+      vertical-align: middle;
+      padding-top: 25px;
+    }
+    .ya-logo {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 2px;
+      img {
+        margin: 0 auto;
+      }
+    }
+    .item-title {
+      padding-top: 6px;
+      p.descr {
+        margin: 2px 0 8px 0;
+        a {
+          margin-left: 3px;
+          text-decoration: none;
+          border-bottom: 1px dotted $link-color;
+        }
+      }
+    }
+    .power p {
+      font-family: $ff;
+      font-size: 10px;
+      color:#888;
+      line-height: 20px;
+      a {
+        font-family: $ff;
+        font-size: 10px;
+        color:#888;
+        line-height: 20px;
+        text-decoration: underline;
+        padding-left: 2px;
+        cursor: pointer;
+        white-space: nowrap;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .all-prop {
+      a {
+        line-height: 20px;
+        font-size: 11px;
+        color:#000;
+        font-family: $ff;
+        cursor: pointer;
+        text-decoration: none;
+        .txt {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        .count {
+          text-decoration: none;
+          cursor: pointer;
+          padding-left: 3px;
+          top: 1px;
+          position: relative;
+        }
+        &:hover {
+          .txt {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .change-city {
+      margin-left: 3px;
+      border-bottom: 1px dotted $link-color;
+    }
+
+    .one-power {
+      padding-top: 15px;
+    }
+    .one-line {
+      padding-top: 8px;
+    }
+
+    .row-body .item-three-title {
+      padding-top: 12px;
+      h1 {
+        a {
+          padding-left: 3px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .offset-midl {
+      height: 5px;
+    }
+
+    .compare.three-tbl  {
+      margin-bottom: -5px;
+      // right: -8px;
+      // position: relative;
+      td {
+        &.first-call {
+          padding-left: 8px;
+          min-width: 65px;
+          a {
+            display: inline;
+          }
+          .prices_rate {
+            display: none;
+          }
+        }
+        &.last-call {
+          padding-right: 8px;
+          padding-left: 24px;
+          width: 87px;
+        }
+        &.midl-call {
+          width: 62px;
+        }
+        padding-bottom: 3px;
+        padding-top: 1px;
+
+      }
+      tr:hover {
+        cursor: pointer;
+        td {
+          background-color: #f0f5f9;
+          &.first-call {
+            a {
+              display: none;
+            }
+            .prices_rate {
+              display: block;
+            }
+          }
+        }   
+      }
+    }
+
+    .item-photo.item-three-photo {
+      padding-top: 15px;
+    }
+
+    .visible-xs {
+      display: none !important;
+    }
+    @media (max-width: 490px) {
+      .visible-xs {
+        display: block !important;
+      }
+    }
+    @media (max-width: 490px) {
+      .compare td.first-call {
+        min-width: inherit;
+      }
+      .hidden-xs {
+        display: none !important;
+      }
+    }
+}

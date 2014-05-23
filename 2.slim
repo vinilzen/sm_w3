@@ -1,0 +1,98 @@
+doctype html
+html
+  head
+    meta charset="utf-8" 
+    meta content="IE=edge" http-equiv="X-UA-Compatible" 
+    title Горизонтальный с двумя товарами
+    link href="css/main.css" rel="stylesheet" type="text/css" 
+  body
+    .test-container style=("padding:5px;") 
+      .sm_w3.smw-horizontal-three
+        .container
+          .row.row-head
+            .col-2
+              a.ya-logo href="ya.ru" alt="Яндекс Маркет"
+                img.img-responsive src="img/yam.png"
+            .col-7.item-title
+              h1.one-line
+                | Предложения дня в городе
+                a.change-city href="http://" target="_blank" Москва
+            .col-3.power.one-power
+              p.text-right
+                | Powered by
+                a SocialMart
+
+          .row.row-body
+            .col-2
+              a href="#"
+                img.img-responsive.item-photo.item-three-photo alt="" src="img/htc.png"
+            .col-4.item-three-title
+              h1
+                | Apple iPhone 5 16Gb от
+                a 22 400 р
+              .all-prop
+                a
+                  span.txt Все предложения
+                  span.count 25
+            .col-6
+              == Slim::Template.new("tbl-sm.slim").render
+          .row.row-body
+            / .clearfix.offset-midl
+            .col-2
+              a href="#"
+                img.img-responsive.item-photo.item-three-photo alt="" src="img/htc.png"
+            .col-4.item-three-title
+              h1
+                | Apple iPhone 5 16Gb от
+                a 22 400 р
+              .all-prop
+                a
+                  span.txt Все предложения
+                  span.count 25
+            .col-6
+              == Slim::Template.new("tbl-sm.slim").render
+    .test-container style=("padding:5px;") 
+      .sm_w3.smw-horizontal-three
+        .container
+          .row.row-head
+            .col-8.item-title
+              h1
+                | Предложения дня в городе
+                a.change-city href="http://" target="_blank" Москва
+            .col-4.power
+              p.text-right
+                | Powered by
+                a SocialMart
+              p.text-right
+                | Данные – 
+                a Яндекс-маркет
+
+          .row.row-body
+            .col-2
+              a href="#"
+                img.img-responsive.item-photo.item-three-photo alt="" src="img/htc.png"
+            .col-4.item-three-title
+              h1
+                | Apple iPhone 5 16Gb от
+                a 22 400 р
+              .all-prop
+                a
+                  span.txt Все предложения
+                  span.count 25
+            .col-6
+              == Slim::Template.new("tbl-sm.slim").render
+          .row.row-body
+            / .clearfix.offset-midl
+            .col-2
+              a href="#"
+                img.img-responsive.item-photo.item-three-photo alt="" src="img/htc.png"
+            .col-4.item-three-title
+              h1
+                | Apple iPhone 5 16Gb от
+                a 22 400 р
+              .all-prop
+                a
+                  span.txt Все предложения
+                  span.count 25
+            .col-6
+              == Slim::Template.new("tbl-sm.slim").render
