@@ -5,9 +5,10 @@ html
     meta content="IE=edge" http-equiv="X-UA-Compatible" 
     title Горизонтальный с одним товаром
     link href="css/main.css" rel="stylesheet" type="text/css" 
+    script src="js/min/all.min.js"
   body
     .test-container style=("padding:5px;") 
-      .sm_w3.smw-horizontal
+      .sm_w3.smw-horizontal.smwpopover
         .container
           .row.row-head
             .col-3
@@ -19,7 +20,38 @@ html
                 a href="#" 22 400 Р
               p.descr
                 | Предложения дня в городе
-                a href="http://" target="_blank" Москва
+                a#change-sity Москва
+              #change-sity-content.hidden
+                .change-sity-content
+                  h4 Выберите город
+                  span.close.close-change-sity type="button"  &times;
+                  .clearfix
+                  form.form-inline.search-sity role="form" 
+                    .form-group
+                      input#sity.form-control.input-sm placeholder=("Поиск города...") type="text" 
+                        span.lupa
+                          i.glyphicon.glyphicon-search
+                  ul
+                    li.active Москва
+                    li Санкт-Петербург
+                    li Оренбург
+                    li Екатеринбург
+                    li Владивосток
+                    li Сочи
+                    li Казань
+                    li Оренбург
+                    li Екатеринбург
+                    li Владивосток
+                    li Сочи
+                    li Казань
+                    li Владивосток
+                    li Сочи
+                    li Казань
+                    li Оренбург
+                    li Екатеринбург
+                    li Владивосток
+                    li Сочи
+                    li Казань
           .row.row-body
             .col-3
               a href="#"

@@ -5,10 +5,11 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <title>Горизонтальный с одним товаром</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/min/all.min.js"></script>
   </head>
   <body>
     <div class="test-container" style="padding:5px;">
-      <div class="sm_w3 smw-horizontal">
+      <div class="sm_w3 smw-horizontal smwpopover">
         <div class="container">
           <div class="row row-head">
             <div class="col-3">
@@ -19,8 +20,84 @@
                 Apple iPhone 5 16Gb от <a href="#">22 400 Р</a>
               </h1>
               <p class="descr">
-                Предложения дня в городе<a href="http://" target="_blank">Москва</a>
+                Предложения дня в городе<a id="change-sity">Москва</a>
               </p>
+              <div class="hidden" id="change-sity-content">
+                <div class="change-sity-content">
+                  <h4>
+                    Выберите город
+                  </h4>
+                  <span class="close close-change-sity" type="button"> &times;</span>
+                  <div class="clearfix"></div>
+                  <form class="form-inline search-sity" role="form">
+                    <div class="form-group">
+                      <input class="form-control input-sm" id="sity" placeholder="Поиск города..." type="text"><span class="lupa"><i class="glyphicon glyphicon-search"></i></span></input>
+                    </div>
+                  </form>
+                  <ul>
+                    <li class="active">
+                      Москва
+                    </li>
+                    <li>
+                      Санкт-Петербург
+                    </li>
+                    <li>
+                      Оренбург
+                    </li>
+                    <li>
+                      Екатеринбург
+                    </li>
+                    <li>
+                      Владивосток
+                    </li>
+                    <li>
+                      Сочи
+                    </li>
+                    <li>
+                      Казань
+                    </li>
+                    <li>
+                      Оренбург
+                    </li>
+                    <li>
+                      Екатеринбург
+                    </li>
+                    <li>
+                      Владивосток
+                    </li>
+                    <li>
+                      Сочи
+                    </li>
+                    <li>
+                      Казань
+                    </li>
+                    <li>
+                      Владивосток
+                    </li>
+                    <li>
+                      Сочи
+                    </li>
+                    <li>
+                      Казань
+                    </li>
+                    <li>
+                      Оренбург
+                    </li>
+                    <li>
+                      Екатеринбург
+                    </li>
+                    <li>
+                      Владивосток
+                    </li>
+                    <li>
+                      Сочи
+                    </li>
+                    <li>
+                      Казань
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row row-body">

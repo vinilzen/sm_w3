@@ -3,7 +3,10 @@
 @import "mixins";
 
 .sm_w3 {
-    @import "grid", "type", "btn", "utilities";
+    @import "grid", "type", "btn", "utilities", "popover";
+
+    overflow: hidden;
+    position: relative;
 
     &.smw-horizontal {
       min-width: 300px;
@@ -105,6 +108,8 @@
           margin-left: 3px;
           text-decoration: none;
           border-bottom: 1px dotted $link-color;
+          color: $link-color;
+          cursor: pointer;
         }
       }
     }
