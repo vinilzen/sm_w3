@@ -412,6 +412,8 @@
 .sm_w3 .prices_rate {
   width: 65px;
   height: 12px;
+  top: -2px;
+  position: relative;
 }
 .sm_w3 .prices_rate .glyphicon {
   width: 12px;
